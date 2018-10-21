@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="desvEstandar" type="tns:desvEstandar" />
+
+<xs:element name="desvEstandarResponse" type="tns:desvEstandarResponse" />
+
+<xs:element name="desvMedia" type="tns:desvMedia" />
+
+<xs:element name="desvMediaResponse" type="tns:desvMediaResponse" />
+
+<xs:element name="dividir" type="tns:dividir" />
+
+<xs:element name="dividirResponse" type="tns:dividirResponse" />
+
+<xs:element name="factorial" type="tns:factorial" />
+
+<xs:element name="factorialResponse" type="tns:factorialResponse" />
+
+<xs:element name="fibonacci" type="tns:fibonacci" />
+
+<xs:element name="fibonacciResponse" type="tns:fibonacciResponse" />
+
+<xs:element name="mediana" type="tns:mediana" />
+
+<xs:element name="medianaResponse" type="tns:medianaResponse" />
+
+<xs:element name="multiplicar" type="tns:multiplicar" />
+
+<xs:element name="multiplicarResponse" type="tns:multiplicarResponse" />
+
+<xs:element name="promedio" type="tns:promedio" />
+
+<xs:element name="promedioResponse" type="tns:promedioResponse" />
+
+<xs:element name="restar" type="tns:restar" />
+
+<xs:element name="restarResponse" type="tns:restarResponse" />
+
+<xs:element name="sumar" type="tns:sumar" />
+
+<xs:element name="sumarResponse" type="tns:sumarResponse" />
+
+<xs:complexType name="promedio">
+<xs:sequence>
+<xs:element name="datos" type="xs:double" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="promedioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumar">
+<xs:sequence>
+<xs:element name="x" type="xs:int" />
+<xs:element name="y" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desvMedia">
+<xs:sequence>
+<xs:element name="datos" type="xs:double" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desvMediaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="factorial">
+<xs:sequence>
+<xs:element name="numero" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="factorialResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mediana">
+<xs:sequence>
+<xs:element name="datos" type="xs:double" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="medianaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desvEstandar">
+<xs:sequence>
+<xs:element name="datos" type="xs:double" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="desvEstandarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fibonacci">
+<xs:sequence>
+<xs:element name="numero" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="fibonacciResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restar">
+<xs:sequence>
+<xs:element name="x" type="xs:int" />
+<xs:element name="y" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicar">
+<xs:sequence>
+<xs:element name="x" type="xs:int" />
+<xs:element name="y" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dividir">
+<xs:sequence>
+<xs:element name="x" type="xs:int" />
+<xs:element name="y" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dividirResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
